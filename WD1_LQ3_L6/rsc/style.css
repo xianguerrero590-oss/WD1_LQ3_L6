@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+.btn-smooth {
+    transition: 0.2s ease;
+}
+
+.btn-smooth:hover {
+    transform: scale(1.03);
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+.nav-active {
+    color: #2563eb !important;  
+    font-weight: bold;
+}
+
+footer img {
+    filter: drop-shadow(0px 0px 4px rgba(255,255,255,0.5));
+}
+
+
+@media (max-width: 640px) {
+    footer div {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
